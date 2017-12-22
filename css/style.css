@@ -1,0 +1,199 @@
+@charset "UTF-8";
+body, html {
+  width: 100%;
+  height: 100%;
+  background: #f1f2f7; }
+
+#rocket-to-top {
+  background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+  cursor: default;
+  display: block;
+  height: 250px;
+  margin: -125px 0 0;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 80%;
+  width: 149px;
+  z-index: 11; }
+  #rocket-to-top div {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 149px; }
+  #rocket-to-top .level-2 {
+    background: url("../images/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+    display: none;
+    height: 250px;
+    opacity: 0;
+    z-index: 1; }
+  #rocket-to-top .level-3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    z-index: 2; }
+
+.header {
+  width: 100%;
+  background: #fff;
+  height: 74px;
+  margin-bottom: 37px; }
+  .header .box {
+    width: 990px;
+    margin: 0 auto; }
+    .header .box h2 {
+      width: 145px;
+      height: 74px;
+      position: relative;
+      margin-right: 216px; }
+      .header .box h2 img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 36px; }
+    .header .box .tab li {
+      font: 19px/66px "微软雅黑";
+      font-weight: bold;
+      border-bottom: 4px solid transparent;
+      margin: 0 24px; }
+      .header .box .tab li a {
+        color: #6f6f6f; }
+    .header .box .tab li:hover {
+      border-bottom: 4px solid #0088ff; }
+      .header .box .tab li:hover a {
+        color: #0088ff; }
+    .header .box .tab .on {
+      border-bottom: 4px solid #0088ff; }
+      .header .box .tab .on a {
+        color: #0088ff; }
+    .header .box h3 {
+      font: 12px/74px "微软雅黑";
+      color: #6f6f6f; }
+
+.orange {
+  color: #ff4800; }
+
+.blue {
+  color: #0084ff; }
+
+.mainContent {
+  width: 868px;
+  margin: 0 auto;
+  padding: 48px 60px;
+  border: 1px solid #9ba2c4;
+  background: #fff;
+  position: relative; }
+  .mainContent .success dl, .mainContent .fail dl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 140px;
+    width: 100%; }
+  .mainContent .success dt img, .mainContent .fail dt img {
+    margin: 0 auto; }
+  .mainContent .success dd, .mainContent .fail dd {
+    font: 16px/38px "微软雅黑";
+    color: #353535;
+    text-align: center; }
+    .mainContent .success dd a, .mainContent .fail dd a {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 0px 16px;
+      border: 1px solid #cfcfcf;
+      border-radius: 4px; }
+  .mainContent .success .small, .mainContent .fail .small {
+    font: 12px/38px "微软雅黑";
+    color: #a3a3a3;
+    text-align: center; }
+  .mainContent .per h3 {
+    font: 12px/31px "微软雅黑";
+    color: #949494;
+    text-indent: 98px; }
+  .mainContent .per .cz {
+    font: 16px/47px "微软雅黑";
+    color: #fff;
+    background: #19b6ed;
+    width: 113px;
+    margin-left: 96px;
+    margin-top: 26px;
+    margin-bottom: 100px; }
+  .mainContent .per .disabled {
+    background: #dfdfdf;
+    color: #ffffff; }
+  .mainContent .per div {
+    margin: 23px 0;
+    font: 12px/55px "微软雅黑"; }
+    .mainContent .per div label {
+      width: 85px;
+      font: 12px/43px "微软雅黑";
+      color: #4e4e4e;
+      text-align: right; }
+    .mainContent .per div input {
+      width: 112px;
+      font-family: "微软雅黑";
+      color: #ababab;
+      padding: 18px 6px;
+      font-size: 12px;
+      border: 1px solid #909090;
+      margin: 0 6px 0 12px; }
+    .mainContent .per div input:focus {
+      border: 1px solid #60aee0; }
+    .mainContent .per div .zffs li {
+      width: 114px;
+      height: 50px;
+      border: 1px solid #cfcfcf;
+      margin: 0 12px;
+      position: relative;
+      font: 12px/50px "微软雅黑";
+      color: #3e3e3e;
+      cursor: pointer; }
+      .mainContent .per div .zffs li span {
+        position: relative;
+        width: 50px;
+        height: 50px; }
+        .mainContent .per div .zffs li span img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          margin: auto; }
+      .mainContent .per div .zffs li em {
+        font: 12px/20px "微软雅黑";
+        background: #55d575;
+        color: #fff;
+        padding: 0 4px;
+        position: absolute;
+        top: -23px;
+        left: 1px; }
+    .mainContent .per div .zffs .on {
+      background: url(../images/yes.png) no-repeat right bottom;
+      border: 1px solid #60aee0; }
+    .mainContent .per div .zffs li:hover {
+      background: url(../images/yes.png) no-repeat right bottom;
+      border: 1px solid #60aee0; }
+  .mainContent .per dl dt {
+    font: 12px/36px "微软雅黑";
+    color: #404040;
+    border-bottom: 1px solid #cfcfcf; }
+  .mainContent .per dl dd {
+    font: 12px/24px "微软雅黑";
+    color: #3a3a3a; }
+    .mainContent .per dl dd h4 {
+      color: #8e8e8e; }
+
+.footer {
+  font: 12px/94px "微软雅黑";
+  color: #949494;
+  text-align: center; }

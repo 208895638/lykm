@@ -167,7 +167,7 @@ body,html{
             font: 12px/55px "微软雅黑";
             label{
                 width: 85px;
-                font: 12px/43px "微软雅黑";
+                font: 12px/50px "微软雅黑";
                 color: #4e4e4e;
                 text-align: right;
             }
@@ -179,6 +179,15 @@ body,html{
                 font-size: 12px;
                 border: 1px solid #909090;
                 margin:0 6px 0 12px;
+            }
+            b{
+                padding: 0 12px 0 34px;
+                 font: 12px/52px "微软雅黑";
+                color: #ff5353;
+                border: 1px solid #ff5353;
+                margin-left: 14px;
+                background: url(../images/shibai.png) no-repeat 12px center;
+                background-size:16px ;
             }
             input:focus{
                 border: 1px solid #60aee0;
@@ -269,7 +278,7 @@ body,html{
     100%{
         transform:scale(1,1)
     }
-
+}
 @-webkit-keyframes scale /* Safari 和 Chrome */
 {
     0%{

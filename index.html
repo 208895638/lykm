@@ -19,7 +19,7 @@
 			<h2 class="l"><img src="images/logo.png"/></h2>
 			<div class="tab l">
 				<ul class="clearfix">
-					<li class="l"><a href="javascript:;">在线加款</a></li>
+					<li class="l on"><a href="javascript:;">在线加款</a></li>
 					<li class="l"><a href="javascript:;">人工加款</a></li>
 				</ul>
 			</div>
@@ -44,7 +44,7 @@
 					<input type="text" placeholder="请输入充值的金额"/ class="l borderNone">元
 				</div>
 				<h3>实际需支付金额<span>1</span>元,含加款手续费<em>1 </em>元</h3>
-				<input type="submit" value="充值" class="cz borderNone disabled" disabled="disabled"/>
+				<input type="button" value="充值" class="cz borderNone disabled"/>
 			</form>
 			<dl>
 				<dt>常见问题</dt>
@@ -87,18 +87,40 @@
 			</dl>
 		</div>
 	</div>
-	<div class="mask">
-		<div class="box">
+	<!--遮罩  提示信息-->
+	<div class="mask hide">
+		<!--支付宝跳转层-->
+		<div class="box zfb hide ">
 			<h2 class="clearfix">
 				<span class="l">确认支付</span>
-				<em><img src="" alt="" /></em>
+				<em class="r"><img src="images/close.png" alt="" /></em>
 			</h2>
+			<dl>
+				<dt>请在新开的页面完成支付!</dt>
+				<dd>根据支付结果，点击下的那个的按钮。</dd>
+			</dl>
+			<h4>
+				<a href="javascript:;" class="success blue">已完成支付</a>
+				<a href="javascript:;" class="fail">未支付</a>
+			</h4>
+		</div>
+		<!--微信跳转层-->
+		<div class="box wx hide">
+			<h2 class="clearfix">
+				<span class="l">微信支付</span>
+				<em class="r"><img src="images/close.png" alt="" /></em>
+			</h2>
+			<h3 class="green">
+				支付成功，正在跳转...
+			</h3>
 		</div>
 	</div>
 	<div class="footer">
 		© Copyright 2008-2018 by kalegou Co., Ltd.
 	</div>
+	
 </body>
 <script src="js/plugins/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/plugins/rocketToTop.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </html>
